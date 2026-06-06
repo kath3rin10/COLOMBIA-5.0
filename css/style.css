@@ -1,0 +1,289 @@
+header{
+    position: relative;
+    padding: 30px;
+}
+
+/* CONTENEDOR DEL LOGO */
+.logo-sena{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    border: 3px solid white;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.logo-sena img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #a300ee, #00259d);
+  color: rgb(237, 232, 232);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* NAV */
+nav {
+  background: #3d1166;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(231, 215, 215);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+#palabras-clave {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#palabras-clave .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#palabras-clave .card {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    font-weight: bold;
+    transition: .3s;
+}
+
+#palabras-clave .card:hover {
+    transform: translateY(-5px);
+}
+/* HERO */
+.hero {
+  background: url("/img/colombia5.0.png") center center no-repeat;
+
+  background-size: 100% 100%;
+  /* hace que la imagen ocupe todo el ancho */
+
+  width: 100%;
+  height: 400px;
+
+  border-radius: 0;
+  /* quita bordes redondos para que llegue completo */
+
+  margin: 0;
+}
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.evento-section{
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.evento-container{
+    max-width: 1000px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    text-align: justify;
+}
+
+.evento-container h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: #153683;
+}
+
+.evento-container p{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+}
+
+/* =========================
+   GLOSARIO CORREGIDO
+========================= */
+#glosarioTitulo{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00324D;
+    margin: 40px 0 30px 0;
+}
+table{
+    width: 95%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+thead{
+    background: #39A900;
+    color: white;
+}
+
+th{
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+tr:nth-child(even){
+    background: #f7f7f7;
+}
+
+tr:hover{
+    background: #e8f5e9;
+    transition: 0.3s;
+}
+
+/* Ancho de columnas */
+td:nth-child(1){
+    width: 20%;
+    font-weight: bold;
+}
+
+td:nth-child(2){
+    width: 25%;
+}
+
+td:nth-child(3){
+    width: 55%;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    table{
+        font-size: 14px;
+    }
+
+    th,
+    td{
+        padding: 8px;
+    }
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 4px solid #0463bb;
+  padding-left: 20px;
+}
+
+/* GALERÍA */
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#video {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f7fa;
+}
+
+#videoTitulo {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #0171e0;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+/* BOTONES */
+button {
+  background: #3b47f5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    height: 220px;
+    border-radius: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+}
